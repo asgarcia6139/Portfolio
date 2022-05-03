@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c21c59228.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <title>Casita de Cafe</title>
+</head>
+
+
+<body>
+    <section class="header-contact">
+        <nav>
+            <h2 class="logo">
+                <a href="index.html">LMNT.</a>
+            </h2>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li id="link"><a href="menu.html">Menu</a></li>
+                    <li id="link"><a href="sobre.html">About</a></li>
+                    <li id="link"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <p id="subhead">CONTACT US</p>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact-box">
+            <h1 class="contact-text">CONTACT US</h1>
+            <section class="list-box">
+                <section class="contact-list">
+
+                    <div class="list">
+                        <p class="price">CAFE</p>
+                        <p>(615) 293-7555</p>
+                    </div>
+                    <div class="list">
+                        <p class="price">EMAIL</p>
+                        <p>asgarcia@trevecca.edu</p>
+                    </div>
+                    <div class="list">
+                        <p class="price">ADDRESS</p>
+                        <p>1421 Lebanon Pk, Nashville, TN</p>
+                    </div>
+                </section>
+                <section class="contact-list">
+                    <div class="contact-col">
+                        <form class="contact-form" action="#">
+                            <input type="text" name="" id="" placeholder="NAME" required>
+                            <input type="email" name="" id="" placeholder="EMAIL" required>
+                            <input type="text" name="" id="" placeholder="SUBJECT" required>
+                            <textarea name="" id="" cols="63" rows="8" placeholder="MESSAGE"></textarea>
+                            <button type="submit" class="contact-btn">Send</button>
+                        </form>
+                    </div>
+                </section>
+        </div>
+    </section>
+
+    <!------ Footer ------>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consectetur sunt corrupti iure, exercitationem
+            porro molestiae, delectus magni <br> blanditiis libero ducimus beatae similique vel itaque harum dignissimos
+            voluptate nemo error.</p>
+        <div class="icons">
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <br>
+        <p>Made by <br> Alexis Garcia </p>
+
+    </section>
+
+    <!------ JavaScript Toggle Menu ------>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "asgarcia6139@gmail.com",
+                Password: "Diamond.life1",
+                To: 'asgarcia6139@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Inquiry",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+
+</body>
+
+</html>
